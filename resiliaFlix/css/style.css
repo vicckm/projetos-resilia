@@ -1,6 +1,13 @@
+html {
+    height: 100%;
+}
+
 body {
     background: #eae2b7;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 header {
@@ -39,13 +46,38 @@ header {
     color: #003049;
 }
 
+main {
+    display: flex;
+    padding: 20px 0;
+}
+
+.main-container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.main-container ul {
+ display: flex;
+ flex-wrap: wrap; 
+ 
+}
+
+.main-container li {
+    margin: 15px; 
+}
+
+.main-container img {
+    width: 200px;
+}
+
 footer {
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
     width: 100%;
     text-align: center;
     background-color: #003049;
     padding: 20px 0;
+    margin-top: auto;
 }
 
 footer li {
